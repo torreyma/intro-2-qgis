@@ -11,8 +11,48 @@ Compile with: pandoc -t beamer -s Mark-Torrey_intro-2-QGIS.md -o Mark-Torrey_int
 -->
 
 <!--
-Title slide gets inserted here automatically, generated from yaml block
+Title slide gets inserted here automatically, generated from yaml block. No separator necessary between title and first content slide.
 -->
+
+## What is "GIS'?
+
+### An acronym, it stands for...
+
+. . . 
+
+Geographic Information System
+
+. . . 
+
+### Why isn't it just called "mapping" software?
+
+. . . 
+
+"Geographic Information" more accurately describes what the software does: Think of it like an extension to your spreadsheet software that lets you look at your data from a geographic perspective (if your data includes a geographic component).
+
+---
+
+### GIS software you need to know the names of:
+* ArcGIS: expensive commercial GIS software made by ESRI <!-- TODO: Add logos? --> 
+* QGIS: Open-source free ArcGIS work-alike software made by volunteers
+* (R and Python: programming languages, also open-source)
+
+<!--
+* What does GIS stand for?
+    * Geographic Information System
+* And does anyone know what it does?
+    * Makes maps
+* Why isn't it just called mapping software?
+    * "Geographic Information" more accurately describes what the software does. It's not primarily about making maps, it's about poking your data. The simplest way to think of it is as an extension of your spreadsheet software like Excel. An extension that lets you look at your spreadsheet from a mappy kind of perspective (if you can). If all you wanted to do was make pretty maps, you want to be working in Illustrator and getting a lesson from a graphic designer (a useful, but different expertise). You can get pretty maps out of GIS, but that's kinda the secondary function after data analysis. Keep this in mind because it will help you understand some the of the more byzatine methods that come up in GIS sometimes.
+* Software:
+    * If you're going to do anything in GIS you need to know that ArcGIS exists: that's the main commercial software comapnies buy if they have tons of money to spend on their GIS work. It's made by a company called ESRI. 
+    * QGIS is the open-source and free and designed to work similarly to ArcGIS. It does all the core things ArcGIS does, and is sometimes simpler to use.
+    * You should also know that almost everything you can do in GIS you can do in programming languages like R and Python, and a lot of people do. The big benefit to a GIS is you get a point-and-clicky interface, instead of having to write code.
+    
+-->
+
+---
+
 
 ## QGIS Main Window
 
@@ -31,7 +71,7 @@ Title slide gets inserted here automatically, generated from yaml block
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
 
-1. Layers List / Browser Panel ^[https://docs.qgis.org/3.34/en/docs/training_manual/basic_map/overview.html]
+1. Layers List / Browser Panel <!-- ^[https://docs.qgis.org/3.34/en/docs/training_manual/basic_map/overview.html] -->
 2. Toolbars
 3. Map canvas
 

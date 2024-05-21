@@ -1,8 +1,8 @@
 first-pass-run-through-notes.md
-Last modified: 2024-05-20 12:10
+Last modified: 2024-05-21 17:35
 
-# A first pass at the run-through order of things:
-
+# A first pass at the run-through order of things, the demo portion:
+(Other topics to cover, like 'drawing with data' not covered here)
 
 ## Get data (you should probably do this ahead of time):
 1. Download CD geography from NYC open data: https://data.cityofnewyork.us/City-Government/Community-Districts/yfnk-k7r4
