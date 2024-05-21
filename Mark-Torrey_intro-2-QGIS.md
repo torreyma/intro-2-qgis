@@ -30,6 +30,15 @@ Geographic Information System
 
 "Geographic Information" more accurately describes what the software does: Think of it like an extension to your spreadsheet software that lets you look at your data from a geographic perspective (if your data includes a geographic component).
 
+<!--
+* What does GIS stand for?
+    * Geographic Information System
+* And does anyone know what it does?
+    * Makes maps
+* Why isn't it just called mapping software?
+    * "Geographic Information" more accurately describes what the software does. It's not primarily about making maps, it's about poking your data. The simplest way to think of it is as an extension of your spreadsheet software like Excel. An extension that lets you look at your spreadsheet from a mappy kind of perspective (if you can). If all you wanted to do was make pretty maps, you want to be working in Illustrator and getting a lesson from a graphic designer (a useful, but different expertise). You can get pretty maps out of GIS, but that's kinda the secondary function after data analysis. Keep this in mind because it will help you understand some the of the more byzatine methods that come up in GIS sometimes.
+-->
+
 ---
 
 ### GIS software you need to know the names of:
@@ -38,17 +47,10 @@ Geographic Information System
 * (R and Python: programming languages, also open-source)
 
 <!--
-* What does GIS stand for?
-    * Geographic Information System
-* And does anyone know what it does?
-    * Makes maps
-* Why isn't it just called mapping software?
-    * "Geographic Information" more accurately describes what the software does. It's not primarily about making maps, it's about poking your data. The simplest way to think of it is as an extension of your spreadsheet software like Excel. An extension that lets you look at your spreadsheet from a mappy kind of perspective (if you can). If all you wanted to do was make pretty maps, you want to be working in Illustrator and getting a lesson from a graphic designer (a useful, but different expertise). You can get pretty maps out of GIS, but that's kinda the secondary function after data analysis. Keep this in mind because it will help you understand some the of the more byzatine methods that come up in GIS sometimes.
 * Software:
     * If you're going to do anything in GIS you need to know that ArcGIS exists: that's the main commercial software comapnies buy if they have tons of money to spend on their GIS work. It's made by a company called ESRI. 
     * QGIS is the open-source and free and designed to work similarly to ArcGIS. It does all the core things ArcGIS does, and is sometimes simpler to use.
     * You should also know that almost everything you can do in GIS you can do in programming languages like R and Python, and a lot of people do. The big benefit to a GIS is you get a point-and-clicky interface, instead of having to write code.
-    
 -->
 
 ---
@@ -85,11 +87,41 @@ Geographic Information System
 :::
 ::::::::::::::
 
+<!--
+* So QGIS is going to be our focus today, and most of the rest of what I'll show you will be a walk-through of getting started with a map
+* This is what the main windows looks like. Most of it should be pretty familiar from any other office software you've used.
+* Pay attention to this Layers list though: each bit of data you add -- the equivalent to a sheet in Excel -- will show up here.
+* The stack order really matters -- what is on top of this layers list is what you will see in the map window. Make sense?
+-->
+
+---
+
+# Let's get into QGIS
+
+## Adding your first data
+1. Start QGIS
+2. Select: \boxed{Project \rightarrow New}
+3. Select: \boxed{Layer \rightarrow Add Layer \rightarrow Add Vector Layer...} This will open a new window.
+
+<!--
+* OK, fire up QGIS. Let me know if you have any trouble with that.
+* Select Project -> New to get a blank map space (I like menus, but if you want to mouseover the buttons to figure out which does what, that's cool too)
+-->
+
 ---
 
 # Resources
 
+<!--
+TODO: URLS are breaking beamer. Maybe wrap in \url?
+## Other trainings:
 - QGIS Training Manual: [https://docs.qgis.org/3.34/en/docs/training_manual/index.html](https://docs.qgis.org/3.34/en/docs/training_manual/index.html)
+
+## Data sources: 
+1. Download CD geography from NYC open data: https://data.cityofnewyork.us/City-Government/Community-Districts/yfnk-k7r4
+2. Download PM 2.5 data by CD from NYC environmental health portal: https://a816-dohbesp.nyc.gov/IndicatorPublic/data-explorer/air-quality/?id=2023#display=map
+3. Download hospital location points from NYS: https://health.data.ny.gov/Health/Health-Facility-General-Information/vn5v-hh5r/about_data
+-->
 
 
 

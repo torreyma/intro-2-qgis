@@ -1,5 +1,5 @@
 first-pass-run-through-notes.md
-Last modified: 2024-05-21 17:35
+Last modified: 2024-05-21 18:49
 
 # A first pass at the run-through order of things, the demo portion:
 (Other topics to cover, like 'drawing with data' not covered here)
@@ -7,7 +7,7 @@ Last modified: 2024-05-21 17:35
 ## Get data (you should probably do this ahead of time):
 1. Download CD geography from NYC open data: https://data.cityofnewyork.us/City-Government/Community-Districts/yfnk-k7r4
 2. Download PM 2.5 data by CD from NYC environmental health portal: https://a816-dohbesp.nyc.gov/IndicatorPublic/data-explorer/air-quality/?id=2023#display=map
-3. Download hostpital location points from NYS: https://health.data.ny.gov/Health/Health-Facility-General-Information/vn5v-hh5r/about_data
+3. Download hospital location points from NYS: https://health.data.ny.gov/Health/Health-Facility-General-Information/vn5v-hh5r/about_data
 
 ## Add and classify hospitals data
 1. Add CD geography (select single symbol and set no brush for fill so we only have outlines)
