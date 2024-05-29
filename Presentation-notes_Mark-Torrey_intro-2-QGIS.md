@@ -10,6 +10,7 @@ date: "2024-05-30"
 * *You all have QGIS installed?* 
 * *And you got the data we're going to use? Did you unzip it?* 
 * *And the instructions to follow (hold up sheet)*
+    * *A lot of this is going to be clicking-along with me, which will follow this instruction sheet --- that way if you get lost, you can look up what you are supposed to do next.*
 
 
 ## What is **GIS**?
@@ -30,15 +31,16 @@ date: "2024-05-30"
 * (R and Python: programming languages, also open-source)
 
 * *If you're going to do anything in GIS you need to know that ArcGIS exists: it's the main commercial software that comapnies buy if they have tons of money to spend on their GIS work. It's made by a company called ESRI.*
-* *QGIS is the open-source and free and designed to work similarly to ArcGIS. It does all the core things ArcGIS does, and is sometimes simpler to use.*
+* *QGIS is open-source and free, and designed to work pretty much just like ArcGIS. It does all the core things ArcGIS does, and is sometimes simpler to use.*
 * *Arc and QGIS are both primarily graphical user interface GIS software.*
 * *You should also know that pretty much everything you can do in gui GIS you can also do in programming languages like R and Python, and a lot of people do. The big benefit to a GIS is you get a point-and-clicky interface, instead of having to write code.*
 
 ## **NYC Environment & Health Data Portal --- PM 2.5 Map**
-* *This is a screeenshot of the NYC Environment & Health Data Portal, which is exactly what it sounds like: a place to get environment and health data about NYC.*
+* *This is a screeenshot of the NYC Environment & Health Data Portal, which is exactly what it sounds like: a place to get environment and health data about NYC. There's lots of websites out there like this where you can download GIS data.*
 * *Say we were doing research on fine particle air pollution. You can see in the screenshot they not only provide that data, but also give you a map of it.*
 * *But this map is an answer to the question: "what neighborhoods in NYC have the worst fine particle pollution?" But what if what we want to know is: "What neighborhoods in The Bronx have the worst pollution?"*
-* *Then we might decide we want to get the environmental health portal's data and make our own map. Which is how we're going to start today.*
+* *You can see in their map of the whole city the Bronx comes out looking pretty much all the same color*
+* *So you might decide we want to get the environmental health portal's data and make our own map. Which is how we're going to start today.*
 
 ## **QGIS Main Window**
 * *We'll use QGIS to make our map, and most of the rest of what I'll show you will be just a QGIS walk-through*
@@ -54,7 +56,8 @@ date: "2024-05-30"
 1. Start QGIS
 * *OK, fire up QGIS. Let me know if you have any trouble with that.*
     * *All these tools at the top can also be found from the menus. I like menus myself, but if you like tool buttons, you can mouseover them and the tooltip will tell you what they are.*
-    * *Notice now we also have this Browser window where we can look for data sources. Today, we'll just load data from files, but this also lets you connect to databases and online servers.*
+    * *Notice now we also have this Browser window where we can look for data sources. Today, we'll just be loading data from files, but this also lets you connect to databases and online servers.*
+* *Everybody has QGIS up? And you know where our sample data is?*
 2. From the menu at the top, click on: \boxed{Project} &rarr; \boxed{New} (Or click the new button)
 
 
@@ -67,6 +70,7 @@ date: "2024-05-30"
 
 
 ## **Adjust the Properties**
+* *The first thing we're going to do is change the color*
 1. Right-click your "NYC CDs" layer in the layer window on the left again, and click on \boxed{Properties...}
     * (This will open the Properties window)
 2. Select \boxed{Symbology} and then click on the line that says \boxed{Simple Fill}. Click on the drop-down box for "Fill style" and select \boxed{No Brush}
@@ -91,7 +95,7 @@ date: "2024-05-30"
 * *OK, now let's take a look at the spreadsheet view of the data*
 1. Without changing your selection, right-click on the *NYC-CDs_PM25* layer in the "Layers" panel on the left and And select \boxed{Open Attribute Table}
     * The Attribute Table will open in a new window --- this is the spreadsheet table view of the data for that layer in the map window
-* Notice the selected rows: each row represents one of the community districts on the map, so you can hold down Ctrl and right-click the row number to select or unselect a community district there there too. (Notice the selection changes on the map at the same time.)
+* Notice the selected rows: each row represents one of the community districts on the map, so you can hold down Ctrl and right-click the row number to select or unselect a community district there too. (Notice the selection changes on the map at the same time.)
 2. Look at the column names at the top. Notice we have columns with the CD names, and information about the pollution levels in each CD as well as some other data.
 3. You can close the Attribute Table window.
 
@@ -119,20 +123,23 @@ date: "2024-05-30"
 4. From the "Color ramp" drop-down, select "Reds"
 5. Click the \boxed{Classify} button
 * *The classify button will add all the different categories of the column you selected in "Value" to the Properties window.*
-6. In the "all other values" line, double-click on the color swatch. Left-click no the color bar where it says "Color". Change the color to some shade of gray and click \boxed{OK} and \boxed{OK} again to close the two color choice boxes.
+* *Does anyone want to take a shot at explaining what that did? It's important...*
+    * *For every value in that column in the attribute table, it created a color here. You can click \boxed{Apply} right now if you want to see those colors on your map immediately.*
+6. In the "all other values" line, double-click on the color swatch. Left-click on the color bar where it says "Color". Change the color to some shade of gray and click \boxed{OK} and \boxed{OK} again to close the two color choice boxes.
 * *We want to make these gray because the 'all other values' are parks in the Bronx.*
-7. click the \boxed{Apply} button to apply your classification to the dots on the map.
+7. click the \boxed{Apply} button to apply your classification to the map.
 * *And we can see our community districts where darker red means higher fine particle pollution*
-
-*Optional: Classify by graduated as an alternative; jenks vs equal interval*
-
 
 ## **Save your map**
 * *Now is a good time to save your map*
 1. Click on \boxed{Project} &rarr; \boxed{Save} to open a file browswer window.
 2. Browse to a location that makes sense, give your project a good name, and save it.
-* Be aware that the project file (.qgz) will *not* include your data. So if you move the data your project depends on (or rename it) you will have to tell QGIS where it is when you open your project again later.
+* *Be aware that the project file (.qgz) will *not* include your data. So if you move the data your project depends on (or rename it) you will have to tell QGIS where it is when you open your project again later. For that reason, it often makes sense it keep your map file with the data that goes along with it.*
 
+## **Next up**
+* If time: show classify by category
+* *Now I'm going to let you go at it on your own. If you want to follow the directions sheet, it will walk you through adding some points data of hospital locations and classifying those.*
+* *But if you have specific questions, we could talk about those as well. Or, heck, we can go off-script and try something random if you like.*
 
 
 

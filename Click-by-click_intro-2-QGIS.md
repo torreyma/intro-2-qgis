@@ -59,7 +59,7 @@ date: "2024-05-30"
 4. From the "Color ramp" drop-down, select "Reds"
 5. Click the \boxed{Classify} button
 6. In the "all other values" line (which represents the parks), double-click on the color swatch. Left-click on the color bar where it says "Color". Change the color to some shade of gray and click \boxed{OK} and \boxed{OK} again to close the two color choice boxes.
-7. click the \boxed{Apply} button to apply your classification to the dots on the map.
+7. click the \boxed{Apply} button to apply your classification to the map.
 
 
 ## **Save your map**

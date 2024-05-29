@@ -74,7 +74,7 @@ Title slide gets inserted here automatically, generated from yaml block. No sepa
 
 ---
 
-# Resources
+# Go to QGIS
 
 <!-- TODO: URLs are breaking beamer, also for some reason this slide HAS to be here, along with this comment, or beamer breaks
 ## Other trainings:
