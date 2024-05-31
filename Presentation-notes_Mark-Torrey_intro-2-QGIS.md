@@ -4,6 +4,8 @@ author: "Mark Torrey"
 date: "2024-05-30"
 ---
 
+<!--  compile with: pandoc -s --from=markdown "Presentation-notes_Mark-Torrey_intro-2-QGIS.md" -V geometry:margin=1in -f markdown-implicit_figures --to=pdf -o ./"Presentation-notes_Mark-Torrey_intro-2-QGIS.md.pdf" -->
+
 
 ## (Title slide)
 * *My name is Mark Torrey, I'm a GIS Specialist at DOHMH.*
@@ -137,9 +139,27 @@ date: "2024-05-30"
 * *Be aware that the project file (.qgz) will *not* include your data. So if you move the data your project depends on (or rename it) you will have to tell QGIS where it is when you open your project again later. For that reason, it often makes sense it keep your map file with the data that goes along with it.*
 
 ## **Next up**
-* If time: show classify by category
+* Other things you can show them:
+    * How to classify by "Graduated" instead of "Categorized"
+        * Why Categorized is a problem --- people have trouble reading a map with more than 4 or 5 colors
+        * You can also get into accessibility choices for people with color disabilities
+    * Setting the projection:
+        * If you load data and get a mostly blank with tiny data far apart, your projection is the problem --- time to google it!
+        * Spot the chance in projection from WGS84 (EPSG: 4326)to NAD83.
+        * Know that the standard projection for NYC is NAD83 / New York Long Island (ftUS) (EPSG:2263)
+    * Describe/show how a join works:
+        * You often have data that is just in CSV, but maybe still can be associated with a geography like community districts. Then you do a join, which is just like a join in Excel, except one of the things you are joining is the CDs shapes.
+    * Where the plugins manager is
+        * Sometimes they just work, sometimes you need to install additional python libraries, sometimes they are experimental
+    * Add labels (often a pain)
+    * More on the relationship to Adobe Illustrator and vector programs:
+        * If you see a fancy map, the data was probably worked in GIS software, and then the layers exported so a graphic designer can clean them up in Adobe software.
+    * How to play with line weights and colors to get a better map
+        * Add more layers like one to show borough boundaries and label the boroughs, and hydrology
+    * How to use layout manager
+    * What does ARCGis do that QGIS doesn't? (Not sure, have to look up good examples of this.)
 * *Now I'm going to let you go at it on your own. If you want to follow the directions sheet, it will walk you through adding some points data of hospital locations and classifying those.*
-* *But if you have specific questions, we could talk about those as well. Or, heck, we can go off-script and try something random if you like.*
+* *But if you have specific questions, we could talk about those as well. Or, heck, we can go off-script and try something random if you like.* (See other things you can show them list above.)
 
 
 

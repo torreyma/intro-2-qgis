@@ -4,6 +4,7 @@ author: "Mark Torrey"
 date: "2024-05-30"
 ---
 
+<!--  compile with: pandoc -s --from=markdown "Click-by-click_intro-2-QGIS.md" -V geometry:margin=1in -f markdown-implicit_figures --to=pdf -o ./"Click-by-click_intro-2-QGIS.md.pdf" -->
 
 # Let's get into QGIS
 

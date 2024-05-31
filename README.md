@@ -5,6 +5,8 @@
 * ```slides``` are just a few intro slides
 * ```click-by-click``` are step-through instructions for the demo and an on-your-own activity
 * ```Presentation notes``` are the click-by-click demo section plus a few things to say while your are doing it.
+* pdfs/ folder contains output pdfs
+
 
 
 
